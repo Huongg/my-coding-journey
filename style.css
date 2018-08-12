@@ -1,0 +1,55 @@
+body {
+	background-color: #464242;
+}
+
+header {
+	width: 800px;
+	margin: auto;
+}
+.social {
+	float: right;
+}
+
+.social a {
+	color: white;
+	font-size: 24px;
+	margin: 2px;
+	/*remove underline*/
+	text-decoration: none;
+}
+
+.title {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.timeline {
+	/*centering the box*/
+	margin: auto;
+	width: 50%;
+}
+
+.container {
+	/*use flexbox to display info and image horizontally*/
+	display: flex;
+  	flex-direction: row;
+/*  	justify-content: center;
+  	text-align: center;*/
+
+  	color: white;
+  	width: 800px;
+  	border: white 1px solid;
+  	margin-bottom: 40px;
+  	margin-top: 40px;
+  	
+}
+
+.info {
+	margin: 20px 30px 20px 40px;
+}
+
+
+
+ 
