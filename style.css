@@ -1,22 +1,29 @@
+
+
 body {
 	/*background-color: #464242;*/
 	background-image: url("./images/pink-dust.png");
 	color: #FFFFF0;
+
 }
 
 header {
-	width: 800px;
-	margin: auto;
+	/*margin: auto;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
+
 .social {
-	float: right;
-	padding-top: 50px;
+	padding-top: 96px;
+    margin-left: 24px;
 }
 
 .social a {
 	color: #FFFFF0;
 	font-size: 20px;
-	margin: 2px;
+	margin: 2px 4px;
+
 	/*remove underline*/
 	text-decoration: none;
 }
@@ -24,7 +31,6 @@ header {
 .title {
 	font-weight: bold;
 	text-align: center;
-	/*padding-top: 50px;*/
 	font-size: 70px;
 }
 
@@ -34,7 +40,6 @@ header {
 	display: flex;
   	flex-direction: row;
   	text-align: center;
-  	vertical-align: center;
 }
 
 .main-profile {
@@ -91,7 +96,7 @@ img {
 }
 
 
-/******** Graph bar ********/
+/******** GRAPH BAR ********/
 
 .graph-bar {
   width: calc(100% - 40px);
@@ -100,7 +105,7 @@ img {
 }
 
 
-/*using flexbox to align p and bar on the same line*/
+/*using flexbox to align p and the bar chart on the same line*/
 .graph-line {
 	display: flex;
   	flex-direction: row;
@@ -163,3 +168,53 @@ img {
 .bar4::after{
   max-width: 50%;
 }
+
+
+
+	/********* RESPONSIVE  *********/
+	/* Portrait and Landscape */
+	@media only screen 
+	  	and (min-device-width: 320px) 
+  		and (max-device-width: 812px) 
+	  	and (-webkit-min-device-pixel-ratio: 3) {
+
+	  		/* I cant find the way to make the smaller screen take the whole width*/
+	  		/*hence i added margin-left in to make sure the page is in the middle*/
+	  		body{
+	  			 margin-left: 2%;
+	  		}
+
+	  		.main-body {
+			    display: flex;
+			    flex-direction: column;
+			}
+
+			.timeline {
+    			/*margin: auto;*/
+			    width: 100%;
+			}
+
+			.container {
+				/* move the container in the middle of timeline*/
+				margin-left: 8%;
+			}
+
+			header {
+				flex-direction: column;
+				text-align: center;
+
+			}
+
+			.social {
+			    text-align: center;
+    			padding-top: 0;
+
+			}
+
+	}
+
+
+
+
+
+
