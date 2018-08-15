@@ -76,8 +76,9 @@ header {
 }
 
 .info {
-	margin: 20px 30px 20px 40px;
+	margin: 20px 30px 6px 40px;
 	text-align: left;
+	position: relative;
 }
 
 
@@ -95,6 +96,18 @@ img {
 	border: #FFFFF0 0.5px solid;
 }
 
+
+.call-to-action {
+	height: 20px;
+	width: 420px;
+	border-top: solid 0.5px #FFFFF0;
+
+	/* keep the CTA stay at the bottom of info*/
+	position: absolute;
+    bottom: 0;
+    
+    padding-top: 14px;
+}
 
 /******** GRAPH BAR ********/
 
