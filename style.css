@@ -4,6 +4,9 @@ body {
 	/*background-color: #464242;*/
 	background-image: url("./images/pink-dust.png");
 	color: #FFFFF0;
+	margin: 0;
+    padding: 0;
+    width: 100%;
 
 }
 
@@ -32,18 +35,20 @@ body {
 	font-weight: bold;
 	text-align: center;
 	font-size: 70px;
+	margin-bottom: 14px;
+	margin-left: 80px;
 }
 
 .introduction {
 	text-align: right;
     width: 80%;
-    margin: auto;
-
-    font-size: 18px;
+    margin: auto;  
 }
 
 .introduction p {
-	line-height: 130%;
+	line-height: 140%;
+	color: #C0C0C0;
+	font-size: 18px;
 }
 
 
@@ -76,8 +81,8 @@ body {
 	display: flex;
   	flex-direction: row;
 
-  	width: 800px;
-  	height: 320px;
+  	width: 900px;
+  	height: 350px;
   	border: #FFFFF0 0.5px solid;
   	border-radius: 4px;
   	margin-bottom: 40px;
@@ -88,11 +93,19 @@ body {
 }
 
 .info {
-	margin: 20px 30px 6px 40px;
+	margin: 0 30px 6px 40px;
 	text-align: left;
 	position: relative;
 }
 
+.headline {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.date {
+	margin-bottom: 4px;
+}
 
 p {
 	font-family: 'Inconsolata', monospace;
@@ -111,14 +124,14 @@ img {
 
 .call-to-action {
 	height: 20px;
-	width: 420px;
+	width: 490px;
 	border-top: solid 0.5px #FFFFF0;
 
 	/* keep the CTA stay at the bottom of info*/
 	position: absolute;
     bottom: 0;
     
-    padding-top: 14px;
+    padding-top: 10px;
 }
 
 .call-to-action a {
@@ -132,6 +145,15 @@ img {
 	color: #2ecc71;
 }
 
+.list-of-links a {
+	text-decoration: none;
+	color: #FFFFF0;
+	font-size: 16px;
+}
+
+.list-of-links a:hover {
+	color: #2ecc71;
+}
 
 /******** GRAPH BAR ********/
 
@@ -210,6 +232,7 @@ img {
 
 	/********* RESPONSIVE  *********/
 	/* Portrait and Landscape */
+	/* iphone 6/7/8 */
 	@media only screen 
 	  	and (min-device-width: 320px) 
   		and (max-device-width: 812px) 
@@ -220,6 +243,14 @@ img {
 	  		body{
 	  			 margin-left: 2%;
 	  		}
+
+	  		.introduction {
+				text-align: center;
+			}
+
+			.introduction p {
+				font-size: 14px;
+			}
 
 	  		.main-body {
 			    display: flex;
@@ -233,21 +264,69 @@ img {
 
 			.container {
 				/* move the container in the middle of timeline*/
-				margin-left: 8%;
+				margin-left: 3%;
 			}
 
-			header {
+			.headline-title {
 				flex-direction: column;
 				text-align: center;
-
 			}
 
 			.social {
 			    text-align: center;
     			padding-top: 0;
-
 			}
 
+			.intro-headline {
+				font-size: 48px;
+			}
+	}
+
+	/* iphone 4/5 */
+	@media only screen 
+	  and (min-device-width: 320px) 
+	  and (max-device-width: 568px)
+	  and (-webkit-min-device-pixel-ratio: 2) {
+	  	body{
+	  			 margin-left: 2%;
+	  		}
+
+	  		.introduction {
+				text-align: center;
+			}
+
+			.introduction p {
+				font-size: 14px;
+			}
+
+	  		.main-body {
+			    display: flex;
+			    flex-direction: column;
+			}
+
+			.timeline {
+    			/*margin: auto;*/
+			    width: 100%;
+			}
+
+			.container {
+				/* move the container in the middle of timeline*/
+				margin-left: 3%;
+			}
+
+			.headline-title {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.social {
+			    text-align: center;
+    			padding-top: 0;
+			}
+
+			.intro-headline {
+				font-size: 48px;
+			}
 	}
 
 
