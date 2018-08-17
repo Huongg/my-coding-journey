@@ -155,6 +155,8 @@ img {
 	color: #2ecc71;
 }
 
+
+/* LEFT SIDE INFO*/
 /******** GRAPH BAR ********/
 
 .graph-bar {
@@ -228,7 +230,23 @@ img {
   max-width: 50%;
 }
 
+.founders-coders {
+	margin-top: 30px;
+}
 
+.freecodecamp {
+	width: 160px;
+    margin-right: 20px;
+}
+
+.github {
+	width: 30px;
+}
+
+.codewars {
+	width: 40px;
+	margin-top: 10px;
+}
 
 	/********* RESPONSIVE  *********/
 	/* Portrait and Landscape */
