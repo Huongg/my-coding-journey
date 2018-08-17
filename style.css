@@ -260,20 +260,44 @@ img {
 	  		/*hence i added margin-left in to make sure the page is in the middle*/
 	  		body{
 	  			 margin-left: 2%;
+	  			 font-size: 26px;
 	  		}
+
 
 	  		.introduction {
 				text-align: center;
 			}
 
 			.introduction p {
-				font-size: 14px;
+				font-size: 16px;
 			}
 
 	  		.main-body {
 			    display: flex;
 			    flex-direction: column;
 			}
+
+			.profile-image {
+				width: 400px;
+				height: 420px;
+			}
+
+			.graph-line p {
+				font-size: 26px;
+			}
+
+			.github {
+			    width: 60px;
+			}
+
+			.freecodecamp {
+			    width: 260px;
+			    margin-right: 20px;
+			}
+
+			.codewars {
+    			width: 60px;
+    		}
 
 			.timeline {
     			/*margin: auto;*/
@@ -283,11 +307,41 @@ img {
 			.container {
 				/* move the container in the middle of timeline*/
 				margin-left: 3%;
+				height: 800px;
+
+			}
+
+			.image {
+				display: none;
+			}
+
+			.call-to-action {
+				width: 820px;
+			}
+
+			.paragraph {
+				font-size: 34px;
+			}
+
+			.headline {
+				font-size: 46px;
+			}
+
+			.date {
+				font-size: 36px;
 			}
 
 			.headline-title {
 				flex-direction: column;
 				text-align: center;
+			}
+
+			.call-to-action {
+				font-size: 30px;
+			}
+
+			.call-to-action a {
+				font-size: 32px;
 			}
 
 			.social {
@@ -297,6 +351,14 @@ img {
 
 			.intro-headline {
 				font-size: 48px;
+			}
+
+			.coding-groups {
+				height: 540px;
+			}
+
+			.code-bar {
+				height: 860px;
 			}
 	}
 
@@ -307,20 +369,44 @@ img {
 	  and (-webkit-min-device-pixel-ratio: 2) {
 	  	body{
 	  			 margin-left: 2%;
+	  			 font-size: 26px;
 	  		}
+
 
 	  		.introduction {
 				text-align: center;
 			}
 
 			.introduction p {
-				font-size: 14px;
+				font-size: 16px;
 			}
 
 	  		.main-body {
 			    display: flex;
 			    flex-direction: column;
 			}
+
+			.profile-image {
+				width: 400px;
+				height: 420px;
+			}
+
+			.graph-line p {
+				font-size: 26px;
+			}
+
+			.github {
+			    width: 60px;
+			}
+
+			.freecodecamp {
+			    width: 260px;
+			    margin-right: 20px;
+			}
+
+			.codewars {
+    			width: 60px;
+    		}
 
 			.timeline {
     			/*margin: auto;*/
@@ -330,11 +416,41 @@ img {
 			.container {
 				/* move the container in the middle of timeline*/
 				margin-left: 3%;
+				height: 800px;
+
+			}
+
+			.image {
+				display: none;
+			}
+
+			.call-to-action {
+				width: 820px;
+			}
+
+			.paragraph {
+				font-size: 34px;
+			}
+
+			.headline {
+				font-size: 46px;
+			}
+
+			.date {
+				font-size: 36px;
 			}
 
 			.headline-title {
 				flex-direction: column;
 				text-align: center;
+			}
+
+			.call-to-action {
+				font-size: 30px;
+			}
+
+			.call-to-action a {
+				font-size: 32px;
 			}
 
 			.social {
@@ -344,6 +460,14 @@ img {
 
 			.intro-headline {
 				font-size: 48px;
+			}
+
+			.coding-groups {
+				height: 540px;
+			}
+
+			.code-bar {
+				height: 860px;
 			}
 	}
 
